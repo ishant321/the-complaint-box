@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=KoHo:wght@200&display=swap" rel="stylesheet">
+    <script src="public/javascript/register.js"></script>
+</head>
+<body>
+    <div class="body">
+        <nav class="navbar h-nav">
+        
+                    <div id="searchbar">
+                    </div>
+    
+                    <ul class="nav v-class">
+                         <li class="item"><a href="index.html">HOME</a></li>
+                         <li class="item"><a href="service.html">SERVICES</a></li>
+                         <li class="item"><a href="about.html">ABOUT&nbspUS</a></li>
+                         <li class="item"><a href="contact.html">CONTACT&nbspUS</a></li>
+                    </ul> 
+    
+                    <div class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+        </nav>
+
+        <div  class="main-register">  
+            
+        <form action="connect.jsp" onsubmit="return validation()" method="post">
+            <h1 class="box">Register</h1>
+                    <div class="box">
+                    <span class="details">Full name</span>   
+                    <input type="text" placeholder="Enter your name" class="textbox" autocomplete="off" id="name" name="name">
+                    <span id="nameerror" class="error"></span>
+                    </div>
+                
+                    <div class="box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your Email" class="textbox" id="mail" autocomplete="off" name="mail">
+                    <span id="mailerror" class="error"></span>
+                    </div>
+                    
+                    <div class="box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your password" class="textbox" id="pass" autocomplete="off" name="password">
+                    <span id="passworderror" class="error"></span>
+                    </div>
+                    
+                    <div class="box">
+                    <span class="details">Confirm password</span>
+                    <input type="password" placeholder="Enter your password again" class="textbox" id="cpass" autocomplete="off" name="confirmpassword">
+                    <span id="conpassworderror" class="error"></span>
+                    </div>
+                   
+                    <div class="box"><a href="" ><input id="button" type="submit" value="Sign up"></div>
+                    </div>
+            
+                </form>
+            </div>
+            
+        </div>
+    
+    
+    <script src="javascript/indexresponsive.js"></script>
+    
+</body>
+</html>
